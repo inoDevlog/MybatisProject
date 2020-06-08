@@ -17,7 +17,7 @@
 		DELETE BOARD WHERE SEQ=#{seq}
 	</delete>
 	
-	<select id="getBoard" resultType="board">
+	<select id="getBoard" parameterType="board" resultType="board">
 		SELECT * FROM BOARD WHERE SEQ=#{seq}
 	</select>
 	
