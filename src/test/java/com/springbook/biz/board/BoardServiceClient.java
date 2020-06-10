@@ -19,7 +19,7 @@ public class BoardServiceClient {
 		vo.setSearchKeyword("");
 		List<BoardVO> boardList = boardDAO.getBoardList(vo);
 		for (BoardVO board : boardList) {
-			System.out.println("------> " + board.toString());
+			System.out.println("-----------> " + board.toString());
 		}
 
 	}
